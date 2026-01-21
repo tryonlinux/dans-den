@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dan &amp; The Lions</title>
+    <meta
+      name="description"
+      content="Endless runner where Dan kneels so God closes the lions' mouths. Win at 777 meters."
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://dan.tryonlinux.com/" />
+    <meta property="og:title" content="Dan &amp; The Lions" />
+    <meta
+      property="og:description"
+      content="Lions rush in from the right. Hold to kneel so God closes their mouths."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dan.tryonlinux.com/" />
+    <meta property="og:image" content="https://dan.tryonlinux.com/favicon.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="frame">
+      <header class="hud">
+        <div class="title">Dan &amp; The Lions</div>
+        <div class="stats">
+          <span id="score">0</span>
+          <span class="label">meters</span>
+        </div>
+      </header>
+      <canvas id="game" width="480" height="720" aria-label="Dan and the Lions game"></canvas>
+      <div class="help" id="help">
+        Touch and hold to kneel and pray, so God closes their mouths.
+      </div>
+      <div class="overlay" id="overlay" aria-live="polite">
+        <div class="panel">
+          <h2 id="overlayTitle">Dan &amp; The Lions</h2>
+          <p id="overlayBody">
+            Lions rush in from the right. Hold to kneel to pray, so God closes their mouths. The den gets faster the longer you last.
+          </p>
+          <button id="startButton" type="button">Start the Trial</button>
+        </div>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
